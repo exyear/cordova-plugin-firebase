@@ -50,14 +50,14 @@ if (directoryExists("platforms/ios")) {
   }
 }
 
-if (directoryExists("assets/www")) {
-  var paths = ["google-services.json", "assets/www/google-services.json"];
+if (directoryExists("platforms/android")) {
+  var paths = ["google-services.json", "platforms/android/assets/www/google-services.json"];
 
   for (var i = 0; i < paths.length; i++) {
     if (fileExists(paths[i])) {
       try {
         var contents = fs.readFileSync(paths[i]).toString();
-        fs.writeFileSync("google-services.json", contents);
+        fs.writeFileSync("platforms/android/google-services.json", contents);
 
         var json = JSON.parse(contents);
         var strings = fs.readFileSync("res/values/strings.xml").toString();
