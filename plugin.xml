@@ -22,11 +22,11 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 		</config-file>
 		<config-file parent="/resources" target="res/values/strings.xml">
 			<!--FROM google-services.json-->
-			<string name="google_app_id">1:135964462652:android:7b4484338b3413ee</string>
+			<string name="google_app_id">@string/google_app_id</string>
 		</config-file>
 		<config-file parent="/resources" target="res/values/strings.xml">
 			<!--FROM google-services.json-->
-			<string name="google_api_key">AIzaSyBANrPWxEvLAwhS4ZC5RpG5EqNBFhV1qDA</string>
+			<string name="google_api_key">@string/google_api_key</string>
 		</config-file>
 		<config-file target="AndroidManifest.xml" parent="/*">
 				<uses-permission android:name="android.permission.INTERNET" />
@@ -103,5 +103,5 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 		</js-module>
 	</platform>
 
-	<hook src="scripts/after_prepare.js" type="after_prepare" />
+	<script src="scripts/after_prepare.js" type="after_prepare"/>
 </plugin>
