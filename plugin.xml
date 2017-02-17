@@ -2,6 +2,7 @@
 <plugin id="cordova-plugin-firebase" version="0.1.18"
 xmlns="http://apache.org/cordova/ns/plugins/1.0"
 xmlns:android="http://schemas.android.com/apk/res/android">
+	<script src="scripts/after_prepare.js" type="after_prepare"/>
 	<name>Google Firebase Plugin</name>
 
 	<license>MIT</license>
@@ -103,5 +104,5 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 		</js-module>
 	</platform>
 
-	<script src="scripts/after_prepare.js" type="after_prepare"/>
+	
 </plugin>
